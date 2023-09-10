@@ -113,7 +113,7 @@ III miejsce: TBD <br>
 - W Fazie Pucharowej:
   - Jebus Cross,
   - mt_Sapphire*,
-  - Kubaryt*
+  - 8xm/Nosta*
 - W Fazie Decydującej:
   - Jebus King,
   - mt_Nebula*,
