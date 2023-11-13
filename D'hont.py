@@ -1,11 +1,10 @@
 def dividing(mandates, committeevotes, dividedvotes):
-
-    for i in range(1, mandates):
-
+    for i in range(1, mandates+1):
         dividedvotes.append(0)
-        dividedvotes[i-1] = committeevotes / i
-        
+        dividedvotes[i - 1] = committeevotes / i
+
     return dividedvotes
+
 
 PiSdivided = []
 KOdivided = []
@@ -16,11 +15,11 @@ Konfadivided = []
 amandates = int(input('Podaj liczbe mandatow w okregu '))
 avotes = int(input('Podaj liczbe wszystkich glosow oddanych w okregu '))
 
-PiSvotes = (float(input('Podaj procent glosow uzyskanych przez KW Prawo i Sprawiedliwosc ')) / 100) * avotes
-KOvotes = (float(input('Podaj procent glosow uzyskanych przez KKW Koalicja Obywatelska PO .N IPL Zieloni ')) / 100) * avotes
-TDvotes = (float(input('Podaj procent glosow uzyskanych przez KKW TRZECIA DROGA PSL-PL2050 SZYMONA HOŁOWNI ')) / 100) * avotes
-NLvotes = (float(input('Podaj procent glosow uzyskanych przez KW Nowa Lewica ')) / 100) * avotes
-Konfavotes = (float(input('Podaj procent glosow uzyskanych przez KW Konfederacja Wolnosc i Niepodlegosc ')) / 100) * avotes
+PiSvotes = int((float(input('Podaj procent glosow uzyskanych przez KW Prawo i Sprawiedliwosc ')) / 100) * avotes)
+KOvotes = int((float(input('Podaj procent glosow uzyskanych przez KKW Koalicja Obywatelska PO .N IPL Zieloni ')) / 100) * avotes)
+TDvotes = int((float(input('Podaj procent glosow uzyskanych przez KKW TRZECIA DROGA PSL-PL2050 SZYMONA HOŁOWNI ')) / 100) * avotes)
+NLvotes = int((float(input('Podaj procent glosow uzyskanych przez KW Nowa Lewica ')) / 100) * avotes)
+Konfavotes = int((float(input('Podaj procent glosow uzyskanych przez KW Konfederacja Wolnosc i Niepodlegosc ')) / 100) * avotes)
 
 PiSdivided = dividing(amandates, PiSvotes, PiSdivided)
 KOdivided = dividing(amandates, KOvotes, KOdivided)
